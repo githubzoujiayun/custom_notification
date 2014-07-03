@@ -1,4 +1,6 @@
-package com.minggo.notification;
+package com.minggo.notification.activity;
+
+import com.minggo.notification.R;
 
 import android.os.Bundle;
 import android.app.Activity;
