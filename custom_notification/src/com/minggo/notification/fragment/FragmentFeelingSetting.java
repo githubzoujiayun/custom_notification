@@ -13,6 +13,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.minggo.love.notification.R;
+import com.minggo.notification.service.LoveNotificationApplication;
 import com.minggo.notification.util.MinggoDate;
 import com.minggo.notification.util.PreferenceShareUtil;
 
@@ -135,7 +136,6 @@ public class FragmentFeelingSetting extends Fragment implements OnClickListener 
 	private void initData() {
 
 		isFirst = false;
-		
 		
 		if (PreferenceShareUtil.getUseFeeling(activity)) {
 			
@@ -332,7 +332,7 @@ public class FragmentFeelingSetting extends Fragment implements OnClickListener 
 	 */
 	private void sendFeelingBroadcast(int dayOfWeek, String feeling) {
 		if (date.getDayOfWeek() == dayOfWeek) {
-			Intent intent = new Intent("minggo.bettery.feeling");
+			Intent intent = new Intent(LoveNotificationApplication.FELLING_ACTION);
 			intent.putExtra("feeling", feeling);
 			activity.sendBroadcast(intent);
 		}

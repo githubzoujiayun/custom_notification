@@ -104,18 +104,12 @@
             android:permission="android.permission.BIND_DEVICE_ADMIN" >
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
-                <action android:name="android.intent.action.SCREEN_ON" />
-                <action android:name="android.intent.action.SCREEN_OFF" />
             </intent-filter>
         </receiver>
 
         <service
             android:name="com.minggo.notification.service.BatteryService"
-            android:process="com.minggo.love.alarm" >
-            <intent-filter android:priority="1000" >
-                <action android:name="minggo.battery.alarm.service" />
-            </intent-filter>
-        </service>
+            android:process="com.minggo.love.alarm" />
     </application>
 
     

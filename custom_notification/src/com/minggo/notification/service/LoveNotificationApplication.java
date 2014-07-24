@@ -23,6 +23,7 @@ public class LoveNotificationApplication extends Application {
 	public List<SoundRecord> defaultSoundList;
 	public static final String EMAIL = "minggo8en@gmail.com";
 	public static Stack<Activity> allActivities;
+	public static final String FELLING_ACTION = "minggo.love.notification.feeling";
 	@Override
 	public void onCreate() {
 		super.onCreate();

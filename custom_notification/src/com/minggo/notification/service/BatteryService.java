@@ -12,7 +12,6 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.res.AssetManager;
 import android.os.IBinder;
-import android.util.Log;
 import android.widget.RemoteViews;
 
 import com.minggo.love.notification.R;
@@ -156,6 +155,7 @@ public class BatteryService extends Service{
 		notification = new Notification();
 		//通知设置不能删除
 		notification.flags = Notification.FLAG_NO_CLEAR;
+		//notification.flags = Notification.FLAG_ONLY_ALERT_ONCE;//只震动或响一次
 		//通知下滑呈现的view
 		remoteViews = new RemoteViews(this.getPackageName(), R.layout.notification);
 		//下滑view的图片
@@ -201,7 +201,7 @@ public class BatteryService extends Service{
 		}else if (level==100){
 			battery = image1[8];
 		}
-		
+		//notification.defaults = Notification.DEFAULT_VIBRATE;
 		// 添加声音提示
         //notification.defaults=Notification.DEFAULT_SOUND;
         // audioStreamType的值必须AudioManager中的值，代表着响铃的模式
@@ -265,9 +265,8 @@ public class BatteryService extends Service{
 		
 		@Override
 		public void onReceive(Context context, Intent intent) {
-			System.out.println("进入了广播");
 			String action = intent.getAction();
-			if (action.equals("minggo.bettery.feeling")) {
+			if (action.equals(LoveNotificationApplication.FELLING_ACTION)) {
 				String feeling = intent.getStringExtra("feeling");
 				if (feeling!=null&&!feeling.equals("")) {
 					modifyFeeling(feeling);
@@ -283,7 +282,7 @@ public class BatteryService extends Service{
 
 	@Override
 	public void onDestroy() {
-		Log.i("minggo.battery", "服务被杀死了");
+		super.onDestroy();
 		notificationManager.cancelAll();
 		this.unregisterReceiver(broadcastReceiver);
 		this.unregisterReceiver(timeChangeReciever);
@@ -291,12 +290,11 @@ public class BatteryService extends Service{
 		stopSelf();
 		
 		System.exit(0);
-		super.onDestroy();
+		
 	}
 
 	@Override
 	public int onStartCommand(Intent intent, int flags, int startId) {
-		Log.i("minggo.battery", "服务开启了");
 		return START_STICKY;
 	}
 	
