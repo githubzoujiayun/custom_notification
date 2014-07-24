@@ -46,11 +46,11 @@
         <!-- 渠道商编号，其中name请不要改，将value修改为渠道商编号。渠道名称请到mtj.baidu.com的渠道管理中修改 -->
         <meta-data
             android:name="BaiduMobAd_CHANNEL"
-            android:value="安卓_[bdad]" />
+            android:value="开发" />
         <!-- 您从百度网站获取的APP KEY -->
         <meta-data
             android:name="BaiduMobAd_STAT_ID"
-            android:value="80e7a648b7" />
+            android:value="a7ea3bb797" />
         <!-- 以下是可选的 -->
         <!-- 是否开启错误日志统计，默认为false -->
         <meta-data
