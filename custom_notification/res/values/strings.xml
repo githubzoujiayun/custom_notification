@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">爱的提醒</string>
-    <!-- 小米专用 -->
-    <!-- <string name="app_name">报时电池</string> -->
+    <!-- 发给用户之前专门写好用户名和密码 -->
+    <string name="costomer_name">costomer_name</string>
+    <string name="costomer_password">costomer_password</string>
+    
     <string name="sunday">哟，还有一天假期，珍惜珍惜！</string>
     <string name="monday">快乐学习，快乐工作啦！</string>
     <string name="tuestday">每天进步一点点，good！</string>

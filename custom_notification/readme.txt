@@ -10,3 +10,9 @@
 		排版页面
 			......			
 			
+		打包须知：
+		
+			①初始化账号和密码
+			 <!-- 发给用户之前专门写好用户名和密码 -->
+	    	<string name="costomer_name">costomer_name</string>
+	    	<string name="costomer_password">costomer_password</string>

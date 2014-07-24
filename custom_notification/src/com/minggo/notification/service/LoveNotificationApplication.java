@@ -9,6 +9,7 @@ import android.app.Application;
 import android.content.Context;
 import android.content.Intent;
 
+import com.minggo.love.notification.R;
 import com.minggo.notification.model.SoundRecord;
 import com.minggo.notification.model.User;
 import com.minggo.notification.util.UserUtil;
@@ -79,6 +80,12 @@ public class LoveNotificationApplication extends Application {
 			user.type = 0;
 			user.useDefineSound = 0;
 			user.useDefinFeeling = 0;
+			UserUtil.saveUser(this, user);
+			
+			User user1 = new User();
+			user1.email = this.getString(R.string.costomer_name);
+			user1.password = this.getString(R.string.costomer_password);
+			user1.type = 1;
 			UserUtil.saveUser(this, user);
 		}
 	}
