@@ -287,7 +287,11 @@ public class IndexActivity extends FragmentActivity implements OnClickListener {
 		}
 	}
 	
-	
+	@Override
+	protected void onPause() {
+		super.onPause();
+		StatService.onPageEnd(IndexActivity.this, getFragment(currIndex));
+	}
 	
 	/**
 	 * 设置快捷键
