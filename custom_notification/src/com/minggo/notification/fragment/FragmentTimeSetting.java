@@ -134,7 +134,7 @@ public class FragmentTimeSetting extends Fragment implements TryListener, OnClic
 			break;
 		case R.id.iv_switch:
 			
-			if (UserUtil.isExistUser(activity)) {
+			//if (UserUtil.isExistUser(activity)) {
 				if (user.useDefineSound == 0) {
 					user.useDefineSound = 1;
 					UserUtil.saveUser(activity, user);
@@ -144,9 +144,9 @@ public class FragmentTimeSetting extends Fragment implements TryListener, OnClic
 				}
 				getSoundList();
 				refreshSoundListUI();
-			}else{
+			//}else{
 				activity.startActivity(new Intent(activity, LoginActivity.class));
-			}
+			//}
 			break;
 
 		default:
