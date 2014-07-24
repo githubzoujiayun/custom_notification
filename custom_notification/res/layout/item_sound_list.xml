@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@drawable/selector_item_sound"
+    android:descendantFocusability="blocksDescendants" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp" >
+
+        <TextView
+            android:id="@+id/tv_user_and_time"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="left"
+            android:layout_marginLeft="10dp"
+            android:text="TextView"
+            android:textColor="@color/index_navi_bt_normal"
+            android:textSize="14dp" />
+
+        <ImageButton
+            android:id="@+id/ib_try_listen"
+            android:layout_width="120dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/tv_user_and_time"
+            android:background="@drawable/selector_bt_sound_listen"
+            android:paddingLeft="5dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/chatfrom_voice_playing_f3" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ib_try_listen"
+            android:layout_alignRight="@+id/ib_try_listen"
+            android:layout_alignTop="@+id/ib_try_listen"
+            android:layout_marginRight="22dp"
+            android:gravity="center"
+            android:text="试听"
+            android:textColor="@color/index_navi_bt_normal"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ib_try_listen"
+            android:textColor="@color/index_navi_bt_normal"
+            android:visibility="gone"
+            android:textSize="12dp"
+            android:text="2''" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

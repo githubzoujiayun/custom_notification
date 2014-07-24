@@ -1,0 +1,36 @@
+# view res/layout/activity_index.xml #generated:113
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view res/layout/activity_main.xml #generated:123
+-keep class com.baidu.mobads.AdView { <init>(...); }
+
+# view AndroidManifest.xml #generated:70
+-keep class com.baidu.mobads.AppActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:74
+-keep class com.minggo.notification.activity.IndexActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:89
+-keep class com.minggo.notification.activity.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:97
+-keep class com.minggo.notification.activity.OrderActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:93
+-keep class com.minggo.notification.activity.RegisterActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:85
+-keep class com.minggo.notification.activity.SettingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:102
+-keep class com.minggo.notification.reciever.TurnOnReciever { <init>(...); }
+
+# view AndroidManifest.xml #generated:112
+-keep class com.minggo.notification.service.BatteryService { <init>(...); }
+
+# view AndroidManifest.xml #generated:30
+-keep class com.minggo.notification.service.LoveNotificationApplication { <init>(...); }
+
+# view res/layout/fragment_alert.xml #generated:127
+-keep class minggo.battery.view.RecordButton { <init>(...); }
+

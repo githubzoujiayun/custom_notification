@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/all_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/lo_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_sunday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="5dp"
+                android:gravity="bottom"
+                android:text="周日："
+                android:textColor="@color/index_navi_bt_pressed"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/ed_sunday_feeling"
+                android:layout_width="0dip"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_input_bg"
+                android:gravity="bottom"
+                android:textColor="@color/index_navi_bt_normal"
+                android:textSize="14dp"
+                android:visibility="gone" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/tv_sunday_feeling"
+                android:layout_width="0dip"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:gravity="left|bottom"
+                android:singleLine="true"
+                android:text="今天是个好日子"
+                android:textColor="@color/index_navi_bt_normal"
+                android:textSize="14dp"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/bt_sunday_pen"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/selector_bt_pen" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lo_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_monday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="5dp"
+                android:gravity="bottom"
+                android:text="周一："
+                android:textColor="@color/index_navi_bt_normal"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/ed_monday_feeling"
+                android:layout_width="0dip"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_input_bg"
+                android:gravity="bottom"
+                android:textColor="@color/index_navi_bt_normal"
+                android:textSize="14dp"
+                android:visibility="gone" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/tv_monday_feeling"
+                android:layout_width="0dip"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:gravity="left|bottom"
+                android:singleLine="true"
+                android:text="今天是个好日子"
+                android:textColor="@color/index_navi_bt_normal"
+                android:textSize="14dp"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/bt_monday_pen"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/selector_bt_pen" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lo_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_tuestday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="5dp"
+                android:gravity="bottom"
+                android:text="周二："
+                android:textColor="@color/index_navi_bt_pressed"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/ed_tuestday_feeling"
+                android:layout_width="0dip"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_input_bg"
+                android:gravity="bottom"
+                android:textColor="@color/index_navi_bt_normal"
+                android:textSize="14dp"
+                android:visibility="gone" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/tv_tuestday_feeling"
+                android:layout_width="0dip"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:gravity="left|bottom"
+                android:singleLine="true"
+                android:text="今天是个好日子"
+                android:textColor="@color/index_navi_bt_normal"
+                android:textSize="14dp"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/bt_tuestday_pen"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/selector_bt_pen" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lo_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_wednesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="5dp"
+                android:gravity="bottom"
+                android:text="周三："
+                android:textColor="@color/index_navi_bt_normal"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/ed_wednesday_feeling"
+                android:layout_width="0dip"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_input_bg"
+                android:gravity="bottom"
+                android:textColor="@color/index_navi_bt_normal"
+                android:textSize="14dp"
+                android:visibility="gone" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/tv_wednesday_feeling"
+                android:layout_width="0dip"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:gravity="left|bottom"
+                android:singleLine="true"
+                android:text="今天是个好日子"
+                android:textColor="@color/index_navi_bt_normal"
+                android:textSize="14dp"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/bt_wednesday_pen"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/selector_bt_pen" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lo_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_thursday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="5dp"
+                android:gravity="bottom"
+                android:text="周四："
+                android:textColor="@color/index_navi_bt_pressed"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/ed_thursday_feeling"
+                android:layout_width="0dip"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_input_bg"
+                android:gravity="bottom"
+                android:textColor="@color/index_navi_bt_normal"
+                android:textSize="14dp"
+                android:visibility="gone" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/tv_thursday_feeling"
+                android:layout_width="0dip"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:gravity="left|bottom"
+                android:singleLine="true"
+                android:text="今天是个好日子"
+                android:textColor="@color/index_navi_bt_normal"
+                android:textSize="14dp"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/bt_thursday_pen"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/selector_bt_pen" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lo_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_friday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="5dp"
+                android:gravity="bottom"
+                android:text="周五："
+                android:textColor="@color/index_navi_bt_normal"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/ed_friday_feeling"
+                android:layout_width="0dip"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_input_bg"
+                android:gravity="bottom"
+                android:textColor="@color/index_navi_bt_normal"
+                android:textSize="14dp"
+                android:visibility="gone" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/tv_friday_feeling"
+                android:layout_width="0dip"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:gravity="left|bottom"
+                android:singleLine="true"
+                android:text="今天是个好日子"
+                android:textColor="@color/index_navi_bt_normal"
+                android:textSize="14dp"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/bt_friday_pen"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/selector_bt_pen" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lo_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_saturday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="5dp"
+                android:gravity="bottom"
+                android:text="周六："
+                android:textColor="@color/index_navi_bt_pressed"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/ed_saturday_feeling"
+                android:layout_width="0dip"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_input_bg"
+                android:gravity="bottom"
+                android:textColor="@color/index_navi_bt_normal"
+                android:textSize="14dp"
+                android:visibility="gone" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/tv_saturday_feeling"
+                android:layout_width="0dip"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:gravity="left|bottom"
+                android:singleLine="true"
+                android:text="今天是个好日子"
+                android:textColor="@color/index_navi_bt_normal"
+                android:textSize="14dp"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/bt_saturday_pen"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/selector_bt_pen" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/shape_feeling_set_tips"
+                android:gravity="left"
+                android:lineSpacingExtra="3dp"
+                android:padding="10dp"
+                android:text="@string/feelin_setting_tip"
+                android:textColor="#666666"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignTop="@+id/textView2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-8dp"
+                android:background="@color/all_bg"
+                android:text="@string/tips"
+                android:textColor="@color/index_navi_bt_pressed"
+                android:textSize="12dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@+id/textView2" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

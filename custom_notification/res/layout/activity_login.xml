@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_bg" >
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/head_bg" >
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/tv_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/iv_logo"
+            android:text="@string/login_title"
+            android:textColor="@color/head_tv_bg"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/lo_login_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_menu_item_bg" >
+
+            <TextView
+                android:id="@+id/tv_user_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/iv_logo"
+                android:text="用户登录"
+                android:textColor="@color/head_tv_bg"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/abc_ic_ab_back_holo_dark" />
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/imageView3"
+                android:src="@drawable/logo" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/ed_username"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/head"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/selector_input_bg"
+        android:gravity="bottom"
+        android:hint="EMAIL"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="5dp"
+        android:textColor="@color/index_navi_bt_normal"
+        android:textColorHint="#D1D1D1"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/ed_password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/ed_username"
+        android:layout_alignRight="@+id/ed_username"
+        android:layout_below="@+id/ed_username"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_input_bg"
+        android:gravity="bottom"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:paddingLeft="5dp"
+        android:textColor="@color/index_navi_bt_normal"
+        android:textColorHint="#D1D1D1"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ed_password"
+        android:layout_alignRight="@+id/ed_password"
+        android:layout_below="@+id/ed_password"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/selector_bt_sound_record"
+        android:text="登录"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/bt_register"
+        android:layout_width="68dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/bt_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"
+        
+        android:background="@drawable/selector_login_register_bt"
+        android:textColor="@color/index_navi_bt_normal"
+        android:text="注册" />
+
+</RelativeLayout>

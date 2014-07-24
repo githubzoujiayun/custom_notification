@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/lo_drop_time_list"
+        android:layout_width="68dp"
+        android:layout_height="32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/shape_alert_list_option_bg" >
+
+        <TextView
+            android:id="@+id/tv_alert_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="00:00"
+            android:textColor="@color/index_navi_bt_normal"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/iv_list_time"
+            android:layout_width="28dp"
+            android:layout_height="29dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow_down" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/ib_try_top"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignTop="@+id/lo_drop_time_list"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/lo_drop_time_list"
+        android:paddingBottom="2dp"
+        android:paddingLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:paddingTop="2dp"
+        android:gravity="center"
+        android:text="我要录音"
+        android:textColor="@color/index_navi_bt_normal"
+        android:textSize="16dp"
+         />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/lo_drop_time_list"
+        android:layout_below="@+id/lo_drop_time_list"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/tv_list_tips"
+                android:src="@drawable/divider_horizontal_timeline" />
+
+            <TextView
+                android:id="@+id/tv_list_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/alert_list_tips_sys"
+                android:textColor="@color/index_navi_bt_normal"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageView1"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/tv_list_tips"
+                android:src="@drawable/divider_horizontal_timeline" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/lv_alert_sounds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout1"
+            android:divider="@drawable/divider_horizontal_timeline"
+            android:dividerHeight="1px"
+            android:fadingEdge="none"
+            android:scrollbars="none" >
+        </ListView>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_time_option"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignLeft="@+id/relativeLayout2"
+        android:layout_alignRight="@+id/lo_drop_time_list"
+        android:layout_below="@+id/lo_drop_time_list"
+        android:divider="@drawable/divider_horizontal_timeline"
+        android:dividerHeight="1dp"
+        android:background="@drawable/shape_try_listen_bg"
+        android:padding="1px"
+        android:visibility="gone"
+        android:fadingEdge="none" />
+
+    <com.minggo.notification.view.RecordButton
+        android:id="@+id/bt_record_sound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/relativeLayout2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_alignRight="@+id/relativeLayout2"
+        android:background="@drawable/selector_bt_sound_record"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:text="按住录音" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout2"
+        android:layout_alignTop="@+id/ib_try_top"
+        android:layout_toLeftOf="@+id/iv_switch"
+        android:gravity="center"
+        android:textSize="14dp"
+        android:visibility="gone"
+        android:textColor="@color/index_navi_bt_normal"
+        android:paddingRight="5dp"
+        android:text="自定义" />
+
+    <ImageView
+        android:id="@+id/iv_switch"
+        android:layout_width="80dp"
+        android:layout_height="32dp"
+        android:layout_above="@+id/relativeLayout2"
+        android:layout_toRightOf="@+id/ib_try_top"
+        android:src="@drawable/switch_off" />
+
+</RelativeLayout>

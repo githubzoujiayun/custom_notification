@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/game_shack_iv"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="40dp"
+            android:text="@string/shuai_yi_shuai"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/game_shack_iv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="53dp"
+            android:src="@drawable/dice_1" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_below="@+id/game_shack_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="91dp" >
+
+            <Button
+                android:id="@+id/bt_sezi_dian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/tran"
+                android:drawableRight="@drawable/selector_shuaizi_type_bt"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="甩点子"
+                android:layout_centerVertical="true"
+                android:textColor="@drawable/selector_index_navi_bt"
+                android:textSize="16dp" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/bt_sezi_dian"
+                android:background="@color/index_navi_bt_pressed" />
+
+            <Button
+                android:id="@+id/bt_sezi_jiawu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/divider"
+                android:background="@color/tran"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/selector_shuaizi_type_bt"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="甩家务"
+                android:textColor="@drawable/selector_index_navi_bt"
+                android:textSize="16dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+   <!--  <com.baidu.mobads.AdView
+        android:id="@+id/adView"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:visibility="visible" /> -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="10dp" >
+
+        <ImageView
+            android:id="@+id/cancel_ad_iv"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/cancel_adl"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

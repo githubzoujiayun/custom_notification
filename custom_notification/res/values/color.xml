@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="all_bg">#ffffff</color>
+    <color name="head_bg">#303537</color>
+   <!--  <color name="head_bg">#37AF0C</color> -->
+    <color name="head_tv_bg">#CFCFCF</color>
+    <color name="head_navi_bg">#F7F7F7</color>
+    <color name="transparent">#00000000</color>
+    <!-- 首页导航字体默认颜色 -->
+    <color name="index_navi_bt_normal">#4F4F4F</color>
+    <!-- 首页导航字体选中颜色 -->
+    <color name="index_navi_bt_pressed">#30B900</color>
+    <color name="sound_item_pressed">#EAEAEA</color>
+    <color name="alert_try_listen">#48D415</color>
+    <color name="navi_index">#33BA03</color>
+    <color name="navi_index_bg">#E4E4E4</color>
+    <color name="menu_divider">#202224</color>
+    <color name="menu_item_pressed">#282A2B</color>
+    <color name="white">#ffffffff</color>
+    <color name="gray">#EBEBEB</color>
+    <color name="tran">#00000000</color>
+    <color name="register_stroke">#D9D9D9</color>
+    <color name="register_normal">#F1F1F1</color>
+    <color name="register_pressed">#D8D8D8</color>
+
+</resources>

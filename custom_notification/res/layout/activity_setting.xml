@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:fadingEdge="none"
+    android:background="@color/all_bg" >
+
+    <RelativeLayout
+        android:id="@+id/lo_index"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/all_bg" >
+
+        <RelativeLayout
+            android:id="@+id/head"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/head_bg" >
+
+            <RelativeLayout
+                android:id="@+id/lo_setting_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_menu_item_bg" >
+
+                <TextView
+                    android:id="@+id/tv_app_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/iv_logo"
+                    android:text="设置"
+                    android:textColor="@color/head_tv_bg"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/abc_ic_ab_back_holo_dark" />
+
+                <ImageView
+                    android:id="@+id/iv_logo"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/imageView3"
+                    android:src="@drawable/logo" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/bt_feeling_setting"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/head"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/preference_single_item"
+            android:clickable="true"
+            android:drawableRight="@drawable/on_off_button"
+            android:gravity="center_vertical"
+            android:paddingLeft="28dp"
+            android:text="自定义心情通知栏显示"
+            android:textColor="#000"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/zheng_sound_bt"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/bt_feeling_setting"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/preference_single_item"
+            android:clickable="true"
+            android:drawableRight="@drawable/on_off_button"
+            android:gravity="center_vertical"
+            android:paddingLeft="28dp"
+            android:text="@string/time_alarm"
+            android:textColor="#000"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/low_power_bt"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/zheng_sound_bt"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/preference_single_item"
+            android:clickable="true"
+            android:drawableRight="@drawable/on_off_button"
+            android:gravity="center_vertical"
+            android:paddingLeft="28dp"
+            android:text="@string/battery_low"
+            android:textColor="#000"
+            android:textSize="17sp" />
+
+        <RelativeLayout
+            android:id="@+id/lo_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/low_power_bt"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/shape_feeling_set_tips"
+                android:gravity="left"
+                android:lineSpacingExtra="3dp"
+                android:padding="10dp"
+                android:text="@string/all_setting_tip"
+                android:textColor="#666666"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignTop="@+id/textView2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-8dp"
+                android:background="@color/all_bg"
+                android:paddingLeft="2dp"
+                android:text="@string/notice"
+                android:textColor="@color/index_navi_bt_pressed"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/exitapp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="28dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/lo_tips"
+            android:background="@drawable/btn_style_red"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="@string/exit"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</ScrollView>

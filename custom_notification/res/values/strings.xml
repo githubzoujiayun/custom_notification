@@ -1,8 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <string name="app_name">custom_notification</string>
-    <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
-
+    <string name="app_name">爱的提醒</string>
+    <!-- 小米专用 -->
+    <!-- <string name="app_name">报时电池</string> -->
+    <string name="sunday">哟，还有一天假期，珍惜珍惜！</string>
+    <string name="monday">快乐学习，快乐工作啦！</string>
+    <string name="tuestday">每天进步一点点，good！</string>
+    <string name="wednesday">是一个突破自己的日子哦！</string>
+    <string name="thursday">适合运动的一天，准备好了吗？</string>
+    <string name="friday">漂亮的完成今天的事，周末更愉快哦！</string>
+    <string name="saturday">适当的休息很重要哦！</string>
+    <string name="version">爱的提醒</string>
+    <string name="author">爱的提醒</string>
+    <string name="login_title">用户登录</string>
+    <string name="battery_low">低电量声音</string>
+    <string name="time_alarm">整点报时声音</string>
+    <string name="default_feeling">使用每日默认提醒</string>
+    <string name="exit">退出</string>
+    <string name="submit">确定</string>
+    <string name="cancel">取消</string>
+    <string name="shuai_yi_shuai">摇一摇手机</string>
+    <string name="shuai_jia_wu">甩家务</string>
+    <string name="shuai_dian_shu">甩点数</string>
+    <string name="minggo_battery">Minggo提醒您：</string>
+    <string name="feelin_setting_tip">　　您可以根据自己的心情提醒或者任务提醒需要，设置一周中的某一天内容。您所设置的内容将会在状态栏中显示提醒哦！ps如果您想恢复默认可以在菜单设置中选择恢复啦！</string>
+    <string name="all_setting_tip">&#160;1.自定录音：先注册登录后使用，便于区分默认报时。\n 2.保持运行：内存清除前设置成白名单，以免应用停止。\n 3.开机启动：部分手机需要设置允许开机启动。\n 4.删除录音：长按自定义录音列表项会提示删除。\n 5.邮件地址：minggo8en@gmail.com，您的建议和意见是我们进步的动力。</string>
+    <string name="tips">提示：</string>
+    <string name="notice"> 注意：</string>
+    <string name="tips_1">提示</string>
+    <string name="delete">删除</string>
+    <string name="record_sound">录音</string>
+    <string name="alert_list_tips_sys">孙燕姿报时提醒</string>
+    <string name="alert_list_tips_user">自定义报时提醒</string>
+    <string name="email_title">电量显示和整点报时意见反馈</string>
+    <string name="share_title">我正在使用电量显示和整点报时</string>
+    <string name="email_content">建议与意见：</string>
+    <string name="share_content">我正在使用的《电量显示和整点报时》，真心不错。明星为您报时，每天每时都有不同心情：http://shouji.360tpcdn.com/140720/1b7ccc9a18e03fb0f74e96fd22f93052/minggo.battery_11.apk\n</string>
+    <string name="email_select_tips">请选择邮件软件发送</string>
+    <string name="share_select_tips">请选择可分享软件</string>
+    <string name="user_no_exist">用户不存在</string>
+    <string name="user_exist">用户已存在</string>
+    <string name="input_email_right">请输入正确的邮件格式</string>
+    <string name="input_null">输入不能为空</string>
+    <string name="login_success">登陆成功</string>
+    <string name="register_success">注册成功</string>
+    <string name="order_tips">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;给你的她/他设定自己的录音整点提醒，每一小时都有你的窝心的话语，这样可以体现细心和爱的表现，从这个一刻开始吧啦啦！！！
+\n&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;做一个私人定制的应用，您可以发送自己的录音到指定邮件minggo8en@gmail.com，那边将会倾力帮您制作您喜欢的提醒录音和提示语哦！下一秒的爱等着你啦&#8230;</string>
+    <string-array name="hour">
+　　        <item>00:00</item>
+　　        <item>01:00</item>
+　　        <item>02:00</item>
+　　        <item>03:00</item>
+　　        <item>04:00</item>
+　　        <item>05:00</item>
+　　        <item>06:00</item>
+　　        <item>07:00</item>
+　　        <item>08:00</item>
+　　        <item>09:00</item>
+　　        <item>10:00</item>
+　　        <item>11:00</item>
+　　        <item>12:00</item>
+　　        <item>13:00</item>
+　　        <item>14:00</item>
+　　        <item>15:00</item>
+　　        <item>16:00</item>
+　　        <item>17:00</item>
+　　        <item>18:00</item>
+　　        <item>19:00</item>
+　　        <item>20:00</item>
+　　        <item>21:00</item>
+　　        <item>22:00</item>
+　　        <item>23:00</item>
+　　    </string-array>
 </resources>
