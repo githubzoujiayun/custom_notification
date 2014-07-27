@@ -145,7 +145,7 @@ public class FragmentTimeSetting extends Fragment implements TryListener, OnClic
 				getSoundList();
 				refreshSoundListUI();
 			//}else{
-				activity.startActivity(new Intent(activity, LoginActivity.class));
+				//activity.startActivity(new Intent(activity, LoginActivity.class));
 			//}
 			break;
 

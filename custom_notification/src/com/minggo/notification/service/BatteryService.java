@@ -154,12 +154,12 @@ public class BatteryService extends Service{
 		//新建通知
 		notification = new Notification();
 		//通知设置不能删除
-		notification.flags = Notification.FLAG_NO_CLEAR;
-		//notification.flags = Notification.FLAG_ONLY_ALERT_ONCE;//只震动或响一次
+		//notification.flags = Notification.FLAG_NO_CLEAR;
+		notification.flags = Notification.FLAG_ONLY_ALERT_ONCE;//只震动或响一次
 		//通知下滑呈现的view
 		remoteViews = new RemoteViews(this.getPackageName(), R.layout.notification);
 		//下滑view的图片
-		remoteViews.setImageViewResource(R.id.battery_iv, image1[0]);
+		remoteViews.setImageViewResource(R.id.battery_iv, R.drawable.logo);
 		//下滑view的文字
 		remoteViews.setTextViewText(R.id.feelings_tv, getDayPrompt()); 
 		//把下滑view绑定在通知上
@@ -180,7 +180,8 @@ public class BatteryService extends Service{
 	 */
 	private void modifyBattery(int level){
 		
-		int battery = 0;
+		int battery = R.drawable.logo;
+		/*int battery = 0;
 		
 		if (0<=level&&level<15) {
 			battery = image1[0];
@@ -200,7 +201,7 @@ public class BatteryService extends Service{
 			battery = image1[7];
 		}else if (level==100){
 			battery = image1[8];
-		}
+		}*/
 		//notification.defaults = Notification.DEFAULT_VIBRATE;
 		// 添加声音提示
         //notification.defaults=Notification.DEFAULT_SOUND;
@@ -223,7 +224,8 @@ public class BatteryService extends Service{
 		}
 		remoteViews.setImageViewResource(R.id.battery_iv, battery);
 		notification.contentView = remoteViews;
-		notification.icon = image[level];
+		//notification.icon = image[level];
+		notification.icon = R.drawable.logo;
 		notificationManager.notify(1, notification);
 	}
 	/**

@@ -32,7 +32,7 @@
     <string name="tips_1">提示</string>
     <string name="delete">删除</string>
     <string name="record_sound">录音</string>
-    <string name="alert_list_tips_sys">孙燕姿报时提醒</string>
+    <string name="alert_list_tips_sys">私人定制默认报时提醒</string>
     <string name="alert_list_tips_user">自定义报时提醒</string>
     <string name="email_title">电量显示和整点报时意见反馈</string>
     <string name="share_title">我正在使用电量显示和整点报时</string>

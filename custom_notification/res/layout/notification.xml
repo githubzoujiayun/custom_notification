@@ -1,18 +1,19 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:gravity="center_vertical"
-    android:orientation="horizontal" >
+    android:orientation="horizontal" 
+    >
 
-    <!-- android:background="@drawable/notification_information_bg" -->
+    <!-- android:background="#EBF4FA" android:background="@drawable/notification_information_bg" -->
 
-    <ImageView
+   <!--  <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:scaleType="fitXY"
         android:src="@drawable/notification_information_bg" />
-
+ -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -21,10 +22,12 @@
 
         <ImageView
             android:id="@+id/battery_iv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:layout_marginLeft="0dp"
-            android:src="@drawable/notification_battery_logo_99" />
+            android:padding="3dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/logo" />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -51,7 +54,7 @@
                 android:layout_gravity="center_vertical|left"
                 android:layout_marginLeft="5dp"
                 android:text="@string/thursday"
-                android:textColor="@android:color/black"
+                android:textColor="@android:color/white"
                 android:textSize="14dp" />
         </LinearLayout>
 
