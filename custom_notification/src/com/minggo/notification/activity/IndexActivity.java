@@ -149,7 +149,6 @@ public class IndexActivity extends FragmentActivity implements OnClickListener {
 	@Override
 	public void onBackPressed() {
 		super.onBackPressed();
-		StatService.onPageEnd(IndexActivity.this, getFragment(currIndex));
 		finish();
 	}
 	
