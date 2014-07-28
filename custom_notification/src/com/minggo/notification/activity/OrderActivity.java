@@ -1,7 +1,5 @@
 package com.minggo.notification.activity;
 
-import java.net.URL;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
