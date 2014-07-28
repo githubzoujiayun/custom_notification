@@ -192,4 +192,17 @@
             android:src="@drawable/divider_horizontal_timeline" />
     </RelativeLayout>
 
+	<Button
+	    android:id="@+id/bt_order"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/tv_order_tips"
+	    android:layout_alignRight="@+id/tv_order_tips"
+	    android:layout_below="@+id/RelativeLayout01"
+	    android:layout_marginTop="23dp"
+	    android:background="@drawable/selector_bt_sound_record"
+	    android:text="查看详细定制规则"
+	    android:textColor="@color/white"
+	    android:textSize="18dp" />
+
 </RelativeLayout>

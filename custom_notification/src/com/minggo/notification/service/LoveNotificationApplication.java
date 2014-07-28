@@ -24,6 +24,9 @@ public class LoveNotificationApplication extends Application {
 	public static final String EMAIL = "minggo8en@gmail.com";
 	public static Stack<Activity> allActivities;
 	public static final String FELLING_ACTION = "minggo.love.notification.feeling";
+	public static final String TAOBAO_URL = "http://bang.taobao.com/item.htm?id=40301430368&spm=686.1000925.1000774.14.yJvphM&mt=";
+	
+	
 	@Override
 	public void onCreate() {
 		super.onCreate();
